@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Conheça nossos sabores</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link"></a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link"></a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link"></a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link"></a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe qual sabor de docinhos você quer?</h2>
+    <p class="banner__texto">Encontre em nossa doceria os melhores doces!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Já sabe qual sabor você vai querer?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos sabores</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img
+            src="https://cdn.awsli.com.br/800x800/1569/1569130/produto/244952594/1-z37bsalhc1.png" alt=""></div>
+        <div class="swiper-slide"><img
+            src="https://www.juliaquitutes.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/b/r/brigadeiro_belga_prata_julia_quitutes_1.jpg"
+            alt=""></div>
+        <div class="swiper-slide"><img
+            src="https://loja.belligourmet.com.br/wp-content/uploads/2019/12/brigadeiro-chumbinho.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="" alt="" />
+
+
+          <p class="descrição__texto">bvbvbvb</p>
+        </div>
+        <div>
+          <img
+            src=""
+            class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img
+            src="https://www.lemebrigadeiros.com.br/wp-content/uploads/2023/09/DSC02712-1.jpg" alt=""></div>
+        <div class="swiper-slide"><img
+            src="https://loja.belligourmet.com.br/wp-content/uploads/2019/12/brigadeiro-especial.png" alt="">
+        </div>
+        <div class="swiper-slide"><img src="https://confeitafit.com.br/wp-content/uploads/2022/09/produto03-800x800.jpg"
+            alt="">
+        </div>
+        <div class="swiper-slide"><img
+            src="https://cdn.awsli.com.br/800x800/514/514919/produto/255956257/atacado-brigadeiro-enrolado-grande--atacado-brigadeiro-cafeterias--atacado-briga-a1cj140ja1.jpg"
+            alt=""></div>
+        <div class="swiper-slide"><img
+            src="https://loja.belligourmet.com.br/wp-content/uploads/2019/12/brigadeiro-confetti.png" alt=""></div>
+        <div class="swiper-slide"><img
+            src="https://www.lemebrigadeiros.com.br/wp-content/uploads/2023/09/DSC02687-1.jpg" alt=""></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
